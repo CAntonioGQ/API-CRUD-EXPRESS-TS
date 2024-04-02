@@ -10,14 +10,14 @@ const controller = new TaskController(
   new TaskRepository()
 );
 
-router.post("/tasks", controller.create.bind(controller));
+router.post("/prestamos", controller.create.bind(controller));
 
-router.get("/tasks", controller.list.bind(controller));
+router.get("/prestamos", controller.list.bind(controller));
 
-router.get("/tasks/:taskId", controller.get.bind(controller));
+router.get("/prestamos/:prestamoId", controller.get.bind(controller));
 
-router.put("/tasks/:taskId", controller.update.bind(controller));
+router.put("/prestamos/:prestamoId", controller.update.bind(controller));
 
-router.delete("/tasks/:taskId", controller.remove.bind(controller));
+router.delete("/prestamos/:prestamoId", controller.remove.bind(controller));
 
 export default router;
