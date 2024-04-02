@@ -1,6 +1,6 @@
 # Gestión de Préstamos
 
-Este proyecto implementa un sistema de gestión de préstamos utilizando una aplicación web desarrollada con Node.js, Express y MySQL en el backend, y TypeScript en el frontend.
+Este proyecto implementa un sistema de gestión de préstamos utilizando una aplicación web desarrollada con Node.js, Express y MySQL en el backend y TypeScript
 
 ## Backend
 
