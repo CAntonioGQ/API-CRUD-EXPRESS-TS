@@ -4,7 +4,7 @@ import express from "express";
 
 import database from "./config/database";
 
-import TaskRoutes from "./routes/prestamos.routes";
+import PrestamoRoutes from "./routes/prestamos.routes";
 
 const app = express();
 
@@ -15,7 +15,7 @@ database.initialize()
   .then(() => console.log("Database connected"))
   .catch(console.error)
 
-app.use('/api', TaskRoutes);
+app.use('/api', PrestamoRoutes);
 
 app.listen(3030, ()=> {
   console.log("App execute in port:3030");

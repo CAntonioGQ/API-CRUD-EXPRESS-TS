@@ -5,15 +5,15 @@ import database from "../config/database";
 import { DatabaseRepository, Id, Query } from "../declarations";
 import { Prestamos } from "../entity/Prestamos";
 
-export class TaskRepository implements DatabaseRepository<Prestamos> {
+export class PrestamoRepository implements DatabaseRepository<Prestamos> {
   async create(data: Partial<Prestamos>, query?: Query): Promise<Prestamos> {
     const repository = database.getRepository(Prestamos);
 
-    const task = repository.create(data);
+    const prestamo = repository.create(data);
 
-    await repository.save(task);
+    await repository.save(prestamo);
 
-    return task;
+    return prestamo;
   }
 
   async list(query?: Query): Promise<Prestamos[]> {

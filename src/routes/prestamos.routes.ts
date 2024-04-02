@@ -1,13 +1,13 @@
 
 import { Router } from "express";
 
-import { TaskController } from "../controller/prestamos.controller";
-import { TaskRepository } from "../repositories/prestamos.repository";
+import { prestamoController } from "../controller/prestamos.controller";
+import { PrestamoRepository } from "../repositories/prestamos.repository";
 
 const router = Router();
 
-const controller = new TaskController(
-  new TaskRepository()
+const controller = new prestamoController(
+  new PrestamoRepository()
 );
 
 router.post("/prestamos", controller.create.bind(controller));
